@@ -1,7 +1,7 @@
-const isEmpty = require('./isEmpty')
-const cons    = require('./cons')
-const head    = require('./head')
-const tail    = require('./tail')
+const isEmpty = require('../isEmpty')
+const cons    = require('../cons')
+const head    = require('../head')
+const tail    = require('../tail')
 
 const append = (list) => (item) => {
   if (isEmpty(list)) return cons(item)()

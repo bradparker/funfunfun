@@ -1,11 +1,13 @@
 const cons = require('../list/cons')
-const head = require('../list/head')
 const tail = require('../list/tail')
+const unit = require('../list/unit')
+const concat = require('../list/concat')
 
 const reduce = require('../reduce/002')
-const reverse = require('../reverse/002')
 
 const intersperse = (newElem) => (list) =>
-  reverse(tail(reduce((newList) => (elem) => cons(newElem)(cons(elem)(newList)))(list)()))
+  tail(reduce((newList) => (elem) => concat(newList)(cons(newElem)(cons(elem)())))
+      (list)
+      (unit))
 
 module.exports = intersperse
