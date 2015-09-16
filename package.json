@@ -4,7 +4,7 @@
   "description": "",
   "main": "reduce.js",
   "scripts": {
-    "test": "mocha ./**/__test__.js"
+    "test": "mocha **/__test__.js"
   },
   "author": "Brad Parker <hi@bradparker.com>",
   "license": "ISC",

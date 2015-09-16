@@ -1,6 +1,6 @@
 const isEmpty = require('./isEmpty')
 const tail = require('./tail')
-const add = require('../utils/math/add')
+const add = require('../../01-partial-functions/add')
 
 const length = (list) => {
   if (isEmpty(list)) return 0

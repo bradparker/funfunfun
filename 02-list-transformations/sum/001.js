@@ -1,7 +1,7 @@
 const isEmpty = require('../array/isEmpty')
 const head    = require('../array/head')
 const tail    = require('../array/tail')
-const add     = require('../utils/math/add')
+const add     = require('../../01-partial-functions/add')
 
 const sum = (list) => {
   if (isEmpty(list)) return 0
