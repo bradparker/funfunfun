@@ -1,1 +1,2 @@
-module.exports = (cell) => cell(1)
+module.exports = (cell) =>
+  cell((a) => (b) => a)
